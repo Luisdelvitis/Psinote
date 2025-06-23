@@ -1,0 +1,894 @@
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1 rem = 10pi**/
+
+}
+
+* {
+    margin: 0;
+}
+
+*,*::before, ::after {
+    box-sizing: inherit;
+}   
+
+body {
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+/* Menu */
+
+/* Ajustar o tamanho do logo */
+.navbar-brand img {
+  height: 50px; /* Ou o tamanho que desejar */
+}
+
+/* Alterar a cor de fundo da navbar */
+.navbar {
+  background-color: #ffffff; /* Substitua pela cor desejada */
+}
+
+/* Estilizar os links do menu */
+.navbar-nav .nav-link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333; /* Cor do texto */
+  transition: 0.3s;
+}
+
+/* Cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+  color: #535353;
+}
+
+/* Estilo do botão hamburguer */
+.navbar-toggler {
+  border: none;
+  background-color: #5A189A;
+}
+
+/* Aumentar espaçamento entre os itens do menu */
+.navbar-nav .nav-item {
+  margin-right: 3.5rem; /* Ajuste esse valor conforme necessário */
+}
+
+/* Remover margem do último item para alinhamento correto */
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Cor do icone hamburguer */
+.navbar-toggler i {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+
+/* Hero Inicial e Sou psi */
+
+.hero {
+    position: relative;
+    background: url('Assets/Hero.png') no-repeat center center/cover;
+    height: 50rem; /* Ocupa a tela toda */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero-soupsi {
+  position: relative;
+  background: url('Assets/Img3.jpg') no-repeat center center/cover;
+  height: 40rem; /* Ocupa a tela toda */
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 0, 53, 0.5); /* Escurece a imagem */
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-btn {
+    font-size: 2rem;  /* Aumenta o texto */
+    color: #ffffff;
+    padding: 1rem 7rem;  /* Aumenta a área do botão */
+    background-color: #5A189A;
+    border: #5A189A;
+}
+
+/*SUB-HERO*/
+
+.sub-hero {
+    display: flex;
+    border-bottom: .1rem solid #bbb;
+    justify-content: center;
+    padding-top: 5rem;
+    padding: 5rem;
+}
+
+.sub-hero p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/*saude mental sessao*/
+
+.container .subsection i {
+  font-size: 6rem;
+  color: #6a1b9a;
+}
+
+.bg-custom {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .section-description {
+    
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subsection {
+    margin-bottom: 40px;
+  }
+
+  .subsection-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:#7B2CBF;
+    margin-bottom: 20px;
+  }
+
+  .subsection-text {
+    color: #555;
+  }
+
+  .cta-button {
+    background-color: #ffc107;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #ffc107;
+  }
+
+  .icon {
+    font-size: 10rem;
+    color: #4b3b8f;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .section-description,
+    .subsection-text {
+      font-size: 1.1rem;
+    }
+  }
+
+/*Primeira Sessão*/
+
+section.primeira-sessao {
+  padding: 4rem 4%;
+  border-bottom: .01rem #bbb solid;
+}
+
+/* Flexbox para desktop */
+section.primeira-sessao .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Estilo da box1 (imagem) */
+.primeira-sessao .box1 {
+  flex: 1;
+  padding: 4rem;
+}
+
+.primeira-sessao .box1 img {
+  width: 100%; /* Ajusta imagem para ocupar 100% do container */
+  height: auto;
+  max-width: 70rem; /* Limita o tamanho máximo da imagem */
+  border-radius: 1.4rem;
+}
+
+/* Estilo da box2 (texto) */
+.primeira-sessao .box2 {
+  flex: 1;
+  padding: 4rem;
+}
+
+/* Título */
+.primeira-sessao .box2 h2 {
+  color: #7B2CBF;
+  font-size: 3rem;
+}
+
+/* Botão */
+.primeira-sessao button {
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 40rem;
+  color: #f5f5f5;
+  font-size: 2.1rem;
+  background-color: #AE35F3;
+  border: #AE35F3;
+  border-radius: 2rem;
+}
+
+/* 📱 Responsividade - Para dispositivos móveis */
+@media (max-width: 768px) {
+  section.primeira-sessao .flex {
+      flex-direction: column; /* Empilha os itens no celular */
+      text-align: center;
+  }
+
+  /* Ajusta a box1 (imagem) */
+  .primeira-sessao .box1 {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      width: 100%;
+  }
+
+  .primeira-sessao .box1 img {
+      max-width: 100%; /* Ajusta a imagem para ocupar 100% da largura */
+      margin: 0 auto;
+  }
+
+  /* Ajusta a box2 (texto) */
+  .primeira-sessao .box2 {
+      padding: 2rem;
+      width: 100%;
+  }
+
+  .primeira-sessao .box2 h2 {
+      font-size: 2.5rem;
+  }
+
+  /* Ajusta o botão */
+  .primeira-sessao button {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1.6rem;
+  }
+}
+
+
+/* Passos - Passos */
+section.passos {
+  padding: 5rem 4%;
+  margin-top: 6rem;
+  background-color: #10002B;
+}
+
+/* Deixar os boxes organizados no desktop e responsivos no mobile */
+section.passos .flex {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título */
+.passos h2 {
+  font-size: 3rem;
+  color: #EAE8E2;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+/* Botão centralizado */
+.passos .buttom-passos {
+  display: flex;
+  padding-top: 8rem;
+  justify-content: center;
+}
+
+/* Estilização dos boxes */
+.passos .passos-box {
+  padding: 1rem;
+  max-width: 25rem;
+  border: #8181816e 0.1rem solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  background-color: #E8DBF3; /* Fundo levemente visível */
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Ícones */
+.passos .passos-box i {
+  font-size: 6rem;
+  color: #7B2CBF;
+  margin-bottom: 2rem;
+}
+
+/* Títulos */
+.passos .passos-box h3 {
+  font-size: 3rem;
+  color: #7B2CBF;
+  padding-bottom: 2rem;
+}
+
+/* Texto */
+.passos .passos-box p {
+  color: #10002B;
+  font-size: 2rem;
+}
+
+/* 📱 Responsividade: Ajustes para mobile */
+@media (max-width: 768px) {
+  section.passos .flex {
+      flex-direction: column; /* Empilha os itens no mobile */
+      align-items: center;
+      gap: 2rem;
+  }
+
+  .passos .passos-box {
+      width: 90%; /* Ocupa quase toda a tela no celular */
+      padding: 2rem;
+  }
+
+  .passos h2 {
+      font-size: 2.5rem;
+      padding-bottom: 4rem;
+  }
+
+  .passos .buttom-passos {
+      padding-top: 4rem;
+  }
+}
+
+ /* Segunda Sessão */
+section.segunda-sessao {
+  padding: 4rem 4%;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding-bottom: 10rem;
+  border-bottom: #bbb solid .1rem;
+}
+
+/* Título da box2 */
+section.segunda-sessao .box2 h2 {
+  color: #4b3b8f;
+  font-size: 3rem;
+}
+
+/* Estilo da imagem (box1) */
+.segunda-sessao .box1 img {
+  width: 100%; /* Ajusta imagem para ocupar 100% do container */
+  height: auto;
+  max-width: 70rem; /* Limita o tamanho máximo da imagem */
+  border-radius: 1.4rem;
+}
+
+/* Botão */
+.segunda-sessao button {
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 40rem;
+  color: #f5f5f5;
+  font-size: 2.1rem;
+  background-color: #d69f06;
+  border: #AE35F3;
+  border-radius: 2rem;
+}
+
+/* 📱 Responsividade - Para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Ajuste no layout da seção */
+  section.segunda-sessao {
+      padding: 2rem 2%;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+  }
+
+  /* Layout flexível para empilhar imagem e texto */
+  .segunda-sessao .flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  /* Ajuste na imagem */
+  .segunda-sessao .box1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      padding-left: 0;
+  }
+
+  .segunda-sessao .box1 img {
+    max-width: 100%; /* Ajusta a imagem para ocupar 100% da largura */
+    margin: 0 auto;
+  }
+
+  /* Ajuste no texto */
+  .segunda-sessao .box2 {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  /* Ajuste no título */
+  .segunda-sessao .box2 h2 {
+      font-size: 2.5rem;
+  }
+
+  /* Botão ajustado para 100% no celular */
+  .segunda-sessao button {
+      width: 100%;
+      font-size: 1.8rem;
+      padding: 1.6rem;
+  }
+}
+
+/* Especialidades */
+.especialidades {
+  border-bottom: #bbb .1rem solid;
+}
+
+.specialties-section {
+  padding: 6rem 0;
+}
+
+.specialty-card {
+  background-color: #f3f2ed;
+  border-radius: 50rem;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-card i {
+  font-size: 6rem;
+  color: #7B2CBF;
+}
+
+.specialty-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.container .row {
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.lgbtqiapn-section {
+  padding: 6rem 0;
+}
+
+.lgbtqiapn-card {
+  background-color: #f3f2ed;
+  border-radius: 50rem;
+  padding: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lgbtqiapn-card i {
+  font-size: 6rem;
+  color: #7B2CBF;
+}
+
+.lgbtqiapn-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 2rem;
+  }
+
+  .specialty-card h3, .lgbtqiapn-card h3 {
+      font-size: 1.2rem;
+  }
+}
+
+/*FAQ*/
+
+.faq-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+  background-color: #10002B;
+}
+
+section .perguntas-frequentes {
+  background-color: #10002B;
+}
+
+.perguntas-frequentes {
+  width: 100rem;
+}
+
+.perguntas-frequentes h1 {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.faq {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq li {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.faq li label {
+  padding: 1.5rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #EAE8E2;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  cursor: pointer;
+}
+
+.faq li label span {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #AE35F3;
+  color: #bbb;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+
+.faq li label::before {
+  content: '+';
+  margin-right: 1rem;
+  font-size: 2.4rem;
+}
+
+.faq input[type=radio] {
+  display: none;
+}
+
+.faq .resposta {
+  padding: 0;
+  background-color: #f0f0f0;
+  line-height: 3.2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.faq input[type=radio]:checked + label + .resposta {
+  max-height: 20rem; /* Altura máxima para o mobile, ajustável */
+  padding: 1rem 1rem 2rem;
+}
+
+.faq input[type=radio]:checked + label + span {
+  background-color: #d69f06;
+}
+
+.faq input[type=radio]:checked + label::before {
+  content: '-';
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+  /* Ajuste na largura da seção para ocupar a tela inteira */
+  .perguntas-frequentes {
+      width: 100%;
+      padding: 0 3rem; /* Adiciona espaçamento nas laterais */
+  }
+
+  /* Reduz o tamanho do título no mobile */
+  .perguntas-frequentes h1 {
+      font-size: 2.5rem;
+  }
+
+  /* Reduz o tamanho das labels e ajusta o espaçamento */
+  .faq li label {
+      font-size: 1.6rem;
+      padding: 1.2rem 1rem;
+  }
+
+  /* Ajusta o tamanho do span no mobile */
+  .faq li label span {
+      font-size: 1.4rem;
+      padding: 0.8rem;
+  }
+
+  /* Ajuste no ícone do acordeão */
+  .faq li label::before {
+      font-size: 2rem;
+  }
+
+  /* Ajusta o espaçamento da resposta */
+  .faq .resposta {
+      line-height: 2.5rem;
+      padding: 0 1rem;
+  }
+
+  /* Aumenta a altura máxima das respostas no mobile */
+  .faq input[type=radio]:checked + label + .resposta {
+      max-height: 15rem; /* Ajuste o valor conforme necessário */
+  }
+}
+
+/*Sessão Conteudo*/
+
+section.container {
+    padding-bottom: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.cartao-artigo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.cartao-artigo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.informacoes-artigo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(45, 0, 82, 0.6);
+    color: white;
+    padding: 15px;
+}
+.informacoes-artigo h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.botao-ler-mais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+  }
+  .footer-link a {
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+  }
+  .footer-link a:hover {
+    text-decoration: underline;
+  }
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .social-icons i:hover {
+    color: #ffc107;
+  }
+  .copyright {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: #bbb;
+  }
+
+
+/*Pgina Buscar Psi*/
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form select, .search-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.search-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-form button:hover {
+  background-color: #218838;
+}
+
+
+.result-card {
+  background: #EAE8E2;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.result-card:hover {
+  transform: scale(1.03);
+}
+
+.profile-img {
+  width: 15rem;  /* Defina o tamanho desejado */
+  height: 15rem;
+  object-fit: cover;  /* Mantém a proporção sem distorcer */
+  border-radius: 50%;  /* Mantém a borda arredondada */
+}
+
+
+.specialties .badge{
+  margin-right: 8px; /* Espaço entre os badges */
+  margin-bottom: 8px; /* Espaço entre as linhas */
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #7B2CBF; /* Roxinho igual ao do design */
+  color: rgb(255, 255, 255);
+}
+
+.contact-btn {
+  background-color: #28a745; /* Verde atual */
+  color: white; /* Cor do texto */
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #1e7e34; /* Cor mais escura no hover */
+}
+
+/*Cadastro PSI*/
+
+.step-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.step-box {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-down {
+  font-size: 24px;
+  color: #5c469c;
+  text-align: center;
+  margin: 10px 0;
+}
+.cta-button {
+  background-color: #5A189A;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.form-section {
+  background: #EAE8E2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/*Termos e Privacidade*/
+
+.termos {
+  margin: auto;
+  max-width: 120rem;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
